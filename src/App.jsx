@@ -7,7 +7,7 @@ const App = () => {
     <>
       <NavBar />
       <ItemListContainer
-        Greeting="bienvenidos a Mora Bag"
+        greeting="bienvenidos a Mora Bag"
       />
     </>
   )
