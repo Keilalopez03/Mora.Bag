@@ -28,12 +28,14 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+#root {
+  width: 100%;
 }
 
 button {
@@ -66,4 +68,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.greeting{
+  font-family: cursive;
+  color: cadetblue;
+  justify-content: center;
+  display: flex;
+}
+@media (min-width: 992px){
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 100%;
+  }
+
+}
+
+.navbar{
+  padding-top: 0px !important;
+  background-color: wheat !important;
 }

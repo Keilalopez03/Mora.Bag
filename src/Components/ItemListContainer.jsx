@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 
 
 const ItemListContainer = ({greeting}) => {
     return (
         <div>
-            <p>{greeting}</p>
+            <p className="greeting">{greeting}</p>
         </div>
     )
 }
