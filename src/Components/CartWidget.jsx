@@ -1,10 +1,10 @@
 import { Flex, Box,Spacer } from '@chakra-ui/react'
-import { StarIcon } from '@chakra-ui/icons'
+import {  } from "module";
 const CardWidget = () => {
     return (
         <Flex>
             <Box>
-                <StarIcon />
+                
             </Box>
             <Spacer />
             <Box>
