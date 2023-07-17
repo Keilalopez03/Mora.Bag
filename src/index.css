@@ -71,9 +71,10 @@ button:focus-visible {
 }
 .greeting{
   font-family: cursive;
-  color: cadetblue;
+  color: black;
   justify-content: center;
   display: flex;
+  font-size: 24px;
 }
 @media (min-width: 992px){
   .container, .container-lg, .container-md, .container-sm {
@@ -84,5 +85,5 @@ button:focus-visible {
 
 .navbar{
   padding-top: 0px !important;
-  background-color: wheat !important;
+  background-color: #ffe5f0 !important;
 }
