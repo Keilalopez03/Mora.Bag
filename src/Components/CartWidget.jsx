@@ -1,14 +1,15 @@
-import { Flex, Box,Spacer } from '@chakra-ui/react'
-// import carrito  from ' ./imagenes/carrito'
+import { Flex, Box, Spacer } from '@chakra-ui/react'
+import carrito from  "../imagenes/carrito.png"
 const CardWidget = () => {
     return (
         <Flex>
             <Box>
-                <p>5</p>
+                <p className='clase-cinco'>5</p>
             </Box>
             <Spacer />
             <Box>
-            {/* {carrito}   */}
+            <img className='clase-carrito' src={carrito} />
+                
             </Box>
         </Flex>
     )

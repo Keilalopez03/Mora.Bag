@@ -85,5 +85,19 @@ button:focus-visible {
 
 .navbar{
   padding-top: 0px !important;
-  background-color: #ffe5f0 !important;
+  background-color: #fdcae1 !important;
+}
+.clase-carrito{
+  max-width: 39% !important;
+  margin-top: 13px;
+}
+.clase-cinco{
+  margin-top: 16px
+}
+.button-carrito{
+  display: flex;
+  justify-content: center;
+}
+.clase-logo{
+  height: 44px;
 }
