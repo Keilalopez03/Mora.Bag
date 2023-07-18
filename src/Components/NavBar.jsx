@@ -13,7 +13,7 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#pricing">Inicio</Nav.Link>
-                        <NavDropdown title="Opciones" id="collasible-nav-dropdown">
+                        <NavDropdown title="Menu" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Carteras</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
                                 Ubicacion

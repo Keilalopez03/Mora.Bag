@@ -1,4 +1,5 @@
 import { Flex, Box,Spacer } from '@chakra-ui/react'
+// import carrito  from ' ./imagenes/carrito'
 const CardWidget = () => {
     return (
         <Flex>
@@ -7,7 +8,7 @@ const CardWidget = () => {
             </Box>
             <Spacer />
             <Box>
-                <img src="" alt="foto carrito de compras" />
+            {/* {carrito}   */}
             </Box>
         </Flex>
     )
