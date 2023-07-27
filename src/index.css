@@ -101,3 +101,8 @@ button:focus-visible {
 .clase-logo{
   height: 44px;
 }
+.contenedor-card{
+  background-color: antiquewhite;
+  margin: 20px;
+ 
+}
