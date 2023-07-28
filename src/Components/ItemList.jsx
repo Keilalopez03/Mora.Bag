@@ -1,11 +1,7 @@
 
- import Item from "./Item"
+import Item from "./Item"
 
-
-
-
-
-const Itemlist = ({productos}) => {
+const Itemlist = ({ productos }) => {
     return (
         <>
             {productos.map((p) => {
