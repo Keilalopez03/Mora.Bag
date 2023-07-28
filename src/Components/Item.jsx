@@ -5,7 +5,8 @@ import Card from 'react-bootstrap/Card';
 const Item = ({
     nombre,
     descripcion,
-    stock
+    stock,
+    precio
 }) => {
     return (
         <>
@@ -15,6 +16,9 @@ const Item = ({
                     <Card.Title>{nombre}</Card.Title>
                     <Card.Text>
                         {descripcion}
+                    </Card.Text>
+                    <Card.Text>
+                        {precio}
                     </Card.Text>
                     <Button variant="primary">Agregar</Button>
                 </Card.Body>
