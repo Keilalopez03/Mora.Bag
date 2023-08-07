@@ -19,6 +19,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -34,6 +35,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 #root {
   width: 100%;
 }
@@ -49,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -62,47 +66,73 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
-.greeting{
+
+.greeting {
   font-family: cursive;
   color: black;
   justify-content: center;
   display: flex;
   font-size: 24px;
 }
-@media (min-width: 992px){
-  .container, .container-lg, .container-md, .container-sm {
-      max-width: 100%;
+
+@media (min-width: 992px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
   }
 
 }
 
-.navbar{
+.navbar {
   padding-top: 0px !important;
   background-color: #fdcae1 !important;
 }
-.clase-carrito{
+
+.clase-carrito {
   max-width: 39% !important;
   margin-top: 13px;
 }
-.clase-cinco{
+
+.clase-cinco {
   margin-top: 16px
 }
-.button-carrito{
+
+.button-carrito {
   display: flex;
   justify-content: center;
 }
-.clase-logo{
+
+.clase-logo {
   height: 44px;
 }
-.contenedor-card{
+
+.contenedor-card {
   background-color: antiquewhite;
   margin: 20px;
- 
+}
+
+.tarjetas {
+  display: flex;
+}
+
+.card-title{
+  min-height: 58px;
+}
+
+.button-card{
+  background-color: #ff69b4!important;
+    --bs-btn-border-color: #ffafea;
+    --bs-btn-hover-border-color:#f706b6!important;
 }

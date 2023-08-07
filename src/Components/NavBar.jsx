@@ -20,10 +20,10 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Link to={('/Carteras')}>
+                    <Link to={('category/Carteras')}>
                             <Nav.Link href="#pricing">Carteras</Nav.Link>
                         </Link>
-                        <Link to={('/Billeteras')}>
+                        <Link to={('category/Billeteras')}>
                             <Nav.Link href="#pricing">Billeteras</Nav.Link>
                         </Link>
                         <Link to={('/home')}>

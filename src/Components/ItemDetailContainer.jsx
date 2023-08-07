@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
             { id: 6, nombre: "Cartera Londres ", descripcion: "cartera Celeste", stock: 2, precio:13000,category: "Carteras" },
             { id: 7, nombre: "Billetera Paris ", descripcion: "Billetera Violeta", stock: 6, precio:5000,category: "Billeteras" },
             { id: 8, nombre: "Cartera Dina ", descripcion: "cartera Rosa", stock: 8, precio:20000,category: "Carteras" },
-            { id: 9, nombre: "Billetera Lexy ", descripcion: "cartera Rosa", stock: 8, precio:20000,category: "Billeteras" },
+            { id: 9, nombre: "Billetera Lexy ", descripcion: "cartera Lila", stock: 8, precio:20000,category: "Billeteras" },
             { id: 10, nombre: "Cartera Vega ", descripcion: "cartera Rosa", stock: 8, precio:20000,category: "Carteras" },
         ]
         const getProductos = new Promise((resolve, reject) => {
