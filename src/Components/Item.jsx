@@ -1,26 +1,29 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-
 const Item = ({
     nombre,
     descripcion,
     stock,
-    precio
+    precio,
+    category,
+
 }) => {
     return (
         <>
             <Card className='contenedor-card' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                     <Card.Title>{nombre}</Card.Title>
                     <Card.Text>
                         {descripcion}
+                        {category}
                     </Card.Text>
                     <Card.Text>
                         {precio}
                     </Card.Text>
-                    <Button variant="primary">Agregar</Button>
+                    <Link to={'/item/${id}'}>
+                        <Button variant="primary">ver detalle</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         </>
