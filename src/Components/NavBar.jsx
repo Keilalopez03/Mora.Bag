@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget'
+import { Link} from 'react-router-dom'
+import logomb from '../imagenes/logomb.jpg'
 
 
 
@@ -11,22 +13,22 @@ const NavBar = () => {
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand href="#home">
-                    <link to={'/'}>
+                    <Link to={'/'}>
                         <img className='clase-logo' src={logomb} />
-                    </link>
+                    </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        < link to={'/category/${"Carteras"}'}>
+                    <Link to={('/Carteras')}>
                             <Nav.Link href="#pricing">Carteras</Nav.Link>
-                        </link>
-                        < link to={'/category/${"Billeteras"}'}>
+                        </Link>
+                        <Link to={('/Billeteras')}>
                             <Nav.Link href="#pricing">Billeteras</Nav.Link>
-                        </link>
-                        < link to={'/category/${"Home"}'}>
+                        </Link>
+                        <Link to={('/home')}>
                         <Nav.Link href="#pricing">Inicio</Nav.Link>
-                        </link>
+                        </Link>
                     </Nav>
                     <Nav>
                         <CartWidget href="#deets"></CartWidget>
