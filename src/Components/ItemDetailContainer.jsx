@@ -17,13 +17,12 @@ const ItemDetailContainer = () => {
         ]
         const getProductos = new Promise((resolve, reject) => {
             if (productos.length > 0) {
-                setTimeout(() => {
-                    resolve(productos)
-                }, 2000)
+                resolve(productos);
             } else {
-                reject(new Error("no hay datos"))
+                reject(new Error("no hay ningun dato"));
             }
-        })
+        });
+        
         getProductos
             .then((res) => {
                 console.log(res)

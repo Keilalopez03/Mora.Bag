@@ -2,7 +2,6 @@
 import ItemList from "../Components/ItemList"
 import {useParams} from 'react-router-dom'
 import { useEffect, useState } from 'react';
-import Spinner from 'react-bootstrap/Spinner';
 
 const ItemListContainer = () => {
     const {category}=useParams()
@@ -20,38 +19,33 @@ const ItemListContainer = () => {
     ]
     const getProductos = new Promise((resolve, reject) => {
         if (productos.length > 0) {
-            setTimeout(() => {
-                resolve(productos)
-            }, 2000)
+            resolve(productos);
         } else {
-            reject(new Error("no hay ningun dato"))
+            reject(new Error("no hay ningun dato"));
         }
-    })
-    const [filteredProducts, setfilteredProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    });
+    
+    const [filteredProducts, setFilteredProducts] = useState([]);
     useEffect(() => {
-        setIsLoading(true);
-        getProductos
-            .then((res) => {
+        const fetchData = async () => {
+            try {
+                const res = await getProductos;
                 const filtered = res.filter((producto) => producto.category.toUpperCase() === category.toUpperCase());
-                setfilteredProducts(filtered);
-                console.log(filtered)
-                setIsLoading(false);
-            })
-            .catch((error) => {
+                setFilteredProducts(filtered);
+                console.log(filtered);
+            } catch (error) {
                 console.log(error);
-                setIsLoading(false);
-            });
+            }
+        };
+    
+        fetchData();
     }, [category]);
+    
     return (
         <div className="tarjetas">
-            {isLoading  ? (
-                <Spinner animation="border" />
-            ) : (
-                <ItemList productos={filteredProducts} />
-            )}
+            <ItemList productos={filteredProducts} />
         </div>
-    )
+    );
 }
 
 export default ItemListContainer

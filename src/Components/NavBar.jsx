@@ -5,15 +5,12 @@ import CartWidget from './CartWidget'
 import { Link} from 'react-router-dom'
 import logomb from '../imagenes/logomb.jpg'
 
-
-
-
 const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand href="#home">
-                    <Link to={'/'}>
+                <Link to={('/home')}>
                         <img className='clase-logo' src={logomb} />
                     </Link>
                 </Navbar.Brand>
