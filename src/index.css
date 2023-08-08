@@ -125,6 +125,7 @@ button:focus-visible {
 
 .tarjetas {
   display: flex;
+
 }
 
 .card-title{
@@ -144,12 +145,13 @@ button:focus-visible {
   justify-content: center;
   min-height: 100%;
   padding: 20px;
-  background-color: #ffafea;
+  background-color:  #edbad1;
 }
 
 .banner {
   text-align: center;
   margin-bottom: 65px;
+  color: white;
 }
 
 .banner img {
@@ -162,4 +164,19 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.card-detalles{
+  
+  width: 24rem;
+  border: 1px solid #e435ea;
+  border-radius: 5px;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background-color: #ffdcf7;;
+  }
+.centralizar-card{
+  display: flex!important;
+  justify-content: center!important;
+  margin: 128px 0px!important;
 }
