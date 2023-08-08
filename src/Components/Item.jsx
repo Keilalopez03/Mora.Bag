@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom'
 const Item = ({
+    id,
     nombre,
     descripcion,
     stock,
@@ -21,7 +22,7 @@ const Item = ({
                     <Card.Text>
                         {precio}
                     </Card.Text>
-                    <Link to={'/item/${id}'}>
+                    <Link to={ `/Item/${id} `}>   
                         <Button  className="button-card">Ver detalle</Button>
                     </Link>
                 </Card.Body>
